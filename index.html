@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Banking System</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Optional CSS for styling -->
+    <script>
+        function handleCreateAccount() {
+            const accountName = prompt("Enter account name:");
+            // Add AJAX call to create an account in the backend
+            alert(`Account '${accountName}' created successfully!`);
+        }
+
+        function handleDeposit() {
+            const accountName = prompt("Enter account name:");
+            const amount = parseFloat(prompt("Enter amount to deposit:"));
+            // Add AJAX call to deposit amount in the backend
+            alert(`Deposited ${amount} to account '${accountName}'.`);
+        }
+
+        function handleWithdraw() {
+            const accountName = prompt("Enter account name:");
+            const amount = parseFloat(prompt("Enter amount to withdraw:"));
+            // Add AJAX call to withdraw amount from the backend
+            alert(`Withdrew ${amount} from account '${accountName}'.`);
+        }
+
+        function handleCheckBalance() {
+            const accountName = prompt("Enter account name:");
+            // Add AJAX call to check balance in the backend
+            alert(`Checked balance for account '${accountName}'.`);
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Simple Banking System</h1>
+        <button onclick="handleCreateAccount()">Create Account</button>
+        <button onclick="handleDeposit()">Deposit</button>
+        <button onclick="handleWithdraw()">Withdraw</button>
+        <button onclick="handleCheckBalance()">Check Balance</button>
+    </div>
+</body>
+</html>
